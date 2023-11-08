@@ -1,14 +1,16 @@
 <?php
 
-    $server     = "localhost:3306"; //para XAMPP es solo "localhost"
-    $user       = "root";
-    $password   = "root";
-    $baseDatos  = "cetis107";
+$server = "localhost";
+$user = "root";
+$password = ""; //es el password del CHAMP
+$base_de_datos = "cetis107";
 
-    $conexion = new mysqli($server, $user, $password, $baseDatos);
+//conexion
+$base_de_datos = "cetis107";
+$conexion = new mysqli($server, $user, $password, $base_de_datos); 
 
-    if($conexion->connect_error){
-        die("Fallo la conexion" . $conexion->connect_error);
-    }
-
+//revisar conexion
+if($conexion->connect_error){
+    die("falló la conexión" . $conexion->connect_error);
+}
 ?>

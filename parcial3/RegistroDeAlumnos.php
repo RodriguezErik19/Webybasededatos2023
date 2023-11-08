@@ -7,18 +7,9 @@
     <title>Registrar alumno</title>
 </head>
 <body>
-    <?php  
-        include 'menu.php'; 
-        include 'conexion';
+    <?php include 'menu.php'; ?>    
 
-        $id = $_GET["id"];
-        $sql = "SELECT * FROM alumnos id=", $id;
 
-        $datos = $conexion->query($sql);
-        $alumno = $datos->fetch_assoc()(0);
-    
-    
-    ?>    
     <div class="container">
         <div class="row">
             <div class="col-12">
